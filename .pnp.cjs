@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.3.0"],\
             ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/mocha", "npm:9.1.0"],\
+            ["@types/node", "npm:17.0.22"],\
             ["@types/sinon-chai", "npm:3.2.8"],\
             ["axios", "npm:0.26.1"],\
             ["chai", "npm:4.3.6"],\
@@ -2946,6 +2947,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.3.0"],\
             ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/mocha", "npm:9.1.0"],\
+            ["@types/node", "npm:17.0.22"],\
             ["@types/sinon-chai", "npm:3.2.8"],\
             ["axios", "npm:0.26.1"],\
             ["chai", "npm:4.3.6"],\
@@ -3875,7 +3877,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", null],\
+            ["@types/node", "npm:17.0.22"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
