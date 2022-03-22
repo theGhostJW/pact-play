@@ -5,6 +5,7 @@
 !.yarn/sdks
 !.yarn/versions
 /.history
+/node_modules
 /dist
 **.bak
 *.bak

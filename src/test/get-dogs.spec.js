@@ -1,7 +1,8 @@
+"use strict"
+
 const expect = require("chai").expect
-import { InteractionObject } from "@pact-foundation/pact"
-import { pactWith } from "mocha-pact"
-import { getMeDogs, getMeDog } from "../lib/indexMocha"
+const { pactWith } = require("mocha-pact")
+const { getMeDogs, getMeDog } = require("../index")
 
 const port = 8992
 
@@ -25,7 +26,7 @@ pactWith(
 
     describe("get /dogs", () => {
       before(done => {
-        const interaction: InteractionObject = {
+        const interaction = {
           state: "i have a list of dogs",
           uponReceiving: "a request for all dogs",
           withRequest: {
@@ -62,7 +63,7 @@ pactWith(
 
     describe("get /dog/1", () => {
       before(done => {
-        const interaction: InteractionObject = {
+        const interaction = {
           state: "i have a list of dogs",
           uponReceiving: "a request for a single dog",
           withRequest: {

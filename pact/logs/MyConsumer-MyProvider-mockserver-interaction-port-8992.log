@@ -1,0 +1,11 @@
+W, [2022-03-22T15:43:45.583231 #29468]  WARN -- : Verifying - actual interactions do not match expected interactions. 
+Missing requests:
+	GET /dogs
+
+
+
+W, [2022-03-22T15:43:45.583231 #29468]  WARN -- : Missing requests:
+	GET /dogs
+
+
+
