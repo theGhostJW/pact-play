@@ -1,4 +1,5 @@
 /* tslint:disable:no-unused-expression object-literal-sort-keys max-classes-per-file no-empty */
+/*
 import * as chai from "chai"
 import chaiAsPromised from "chai-as-promised"
 import path = require("path")
@@ -12,7 +13,7 @@ const { eachLike } = Matchers
 chai.use(sinonChai)
 chai.use(chaiAsPromised)
 
-describe("The Dog API", () => {
+describe.skip("The Dog API", () => {
   const url = "http://localhost"
   let dogService: DogService
 
@@ -99,3 +100,5 @@ describe("The Dog API", () => {
     })
   })
 })
+
+*/
