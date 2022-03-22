@@ -1,6 +1,5 @@
 import axios from "axios"
 
-
 type DogParams = {
   url: string,
   port: number
