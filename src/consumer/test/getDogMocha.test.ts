@@ -3,6 +3,7 @@ import { InteractionObject } from "@pact-foundation/pact"
 import { pactWith } from "mocha-pact"
 import { getMeDogs, getMeDog } from "../lib/mockService"
 
+const url = "http://127.0.0.1"
 const port = 8992
 
 pactWith(
@@ -12,7 +13,6 @@ pactWith(
     provider: "MyProvider",
   },
   provider => {
-    let url = "http://127.0.0.1"
 
     const EXPECTED_BODY = [
       {
