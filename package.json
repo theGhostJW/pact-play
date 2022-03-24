@@ -26,6 +26,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha --require ts-node/register ./src/**/**.test.ts"
+    "test": "mocha --require ts-node/register ./src/**/**.test.ts",
+    "testProvider": "mocha --require ts-node/register ./src/**/**.test.ts"
   }
 }

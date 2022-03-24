@@ -1,14 +1,16 @@
 import { Verifier, VerifierOptions } from '@pact-foundation/pact'
 import { AxiosInstance } from 'axios';
+import http from 'http'
 import { Server } from 'http';
 import mochaPact from "mocha-pact"
 import path from 'path';
-import {describe, test} from 'mocha'
-import { fullUrl } from '../lib/serverImplementation';
+import { describe, test } from 'mocha'
+import { fullUrl, app, port } from '../lib/serverImplementation';
+import { doesNotMatch } from 'assert';
 
 
 
-const options : VerifierOptions = {
+const options: VerifierOptions = {
   provider: 'MyProvider',
   providerBaseUrl: fullUrl,
   pactUrls: [path.resolve(process.cwd(), "pact", "pacts", "myconsumer-myprovider.json")],
@@ -20,11 +22,27 @@ const options : VerifierOptions = {
 const verifier = new Verifier(options);
 
 describe.only('Pact Verification', () => {
- 
-  test('should validate the expectations of movie-consumer', () => {
-    return verifier.verifyProvider()
+
+  let sv: http.Server;
+  before(done => {
+    sv = app.listen(port, () => {
+      console.log(`Listening on port ${port}...`)
+      app.emit("app_started")
+      done()
+    })
+  })
+
+  test('should validate the expectations of movie-consumer', done => {
+    verifier
+      .verifyProvider()
+      .finally(done)
+      done()
+  })
+
+  after(done => {
+    sv.close(done)
   })
 
 
 
-});
+})
