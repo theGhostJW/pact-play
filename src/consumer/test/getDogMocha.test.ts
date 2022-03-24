@@ -1,7 +1,7 @@
 const expect = require("chai").expect
 import { InteractionObject } from "@pact-foundation/pact"
 import { pactWith } from "mocha-pact"
-import { getMeDogs, getMeDog } from "../lib/indexMocha"
+import { getMeDogs, getMeDog } from "../lib/mockService"
 
 const port = 8992
 

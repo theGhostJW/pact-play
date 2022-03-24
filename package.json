@@ -3,7 +3,6 @@
   "packageManager": "yarn@3.2.0",
   "version": "1.0.0",
   "description": "TypeScript Pact Example",
-  "main": "./src/lib/indexMocha.ts",
   "devDependencies": {
     "@pact-foundation/pact": "^9.7.0",
     "@pact-foundation/pact-node": "^10.17.2",
