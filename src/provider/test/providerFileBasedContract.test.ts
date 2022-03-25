@@ -46,7 +46,7 @@ describe('Pact Verification', () => {
     timeout: 20000
   }
 
-  test('should validate the expectations of movie-consumer', async () => {
+  test('expectations of MyConsumer', async () => {
     return await new Verifier(options).verifyProvider()
   })
 

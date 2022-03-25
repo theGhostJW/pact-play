@@ -6,7 +6,7 @@ import { getMeDogs, getMeDog } from "../lib/mockService"
 const url = "http://127.0.0.1"
 const port = 8992
 
-pactWith.only(
+pactWith(
   {
     port,
     consumer: "MyConsumer",
