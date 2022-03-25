@@ -1,0 +1,16 @@
+I, [2022-03-25T11:42:53.230540 #30668]  INFO -- : Registered expected interaction GET /dogs
+I, [2022-03-25T11:42:53.246576 #30668]  INFO -- : Received request GET /dogs
+I, [2022-03-25T11:42:53.247540 #30668]  INFO -- : Found matching response for GET /dogs
+I, [2022-03-25T11:42:53.261431 #30668]  INFO -- : Verifying - interactions matched
+I, [2022-03-25T11:42:53.277431 #30668]  INFO -- : Cleared interactions
+I, [2022-03-25T11:42:53.291587 #30668]  INFO -- : Registered expected interaction GET /dogs/1
+I, [2022-03-25T11:42:53.306628 #30668]  INFO -- : Received request GET /dogs/1
+I, [2022-03-25T11:42:53.308631 #30668]  INFO -- : Found matching response for GET /dogs/1
+I, [2022-03-25T11:42:53.322331 #30668]  INFO -- : Verifying - interactions matched
+I, [2022-03-25T11:42:53.336923 #30668]  INFO -- : Cleared interactions
+I, [2022-03-25T11:42:53.353543 #30668]  INFO -- : Updating pact for MyProvider at C:/pact-play/pact/pacts/myconsumer-myprovider.json
+I, [2022-03-25T11:42:53.355541 #30668]  INFO -- : *****************************************************************************
+I, [2022-03-25T11:42:53.356538 #30668]  INFO -- : Updating existing file .C:/pact-play/pact/pacts/myconsumer-myprovider.json as pactfile_write_mode is :update
+I, [2022-03-25T11:42:53.356538 #30668]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2022-03-25T11:42:53.356538 #30668]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2022-03-25T11:42:53.356538 #30668]  INFO -- : *****************************************************************************

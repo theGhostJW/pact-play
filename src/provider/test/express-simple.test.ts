@@ -13,11 +13,11 @@ const callSimple = () => {
 }
 
 
-describe.skip('simple demo', () => {
+describe('simple demo', () => {
   let server: http.Server;
   before((done) => {
     server = app.listen(port, () => {
-      console.log('App has started');
+      console.log(`App has started - listining on port ${port}`);
       done();
     });
   });

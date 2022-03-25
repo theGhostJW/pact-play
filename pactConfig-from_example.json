@@ -1,0 +1,15 @@
+{
+  "timeout": 30000,
+  "consumer": "movie-consumer",
+  "cors": false,
+  "dir": "C:\\pact-js-example\\pacts",
+  "host": "127.0.0.1",
+  "log": "C:\\pact-js-example\\logs\\pact.log",
+  "logLevel": "INFO",
+  "provider": "movie-provider",
+  "pactfileWriteMode": "update",
+  "spec": 2,
+  "ssl": false,
+  "port": 8992,
+  "pactFileWriteMode": "overwrite"
+}

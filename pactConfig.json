@@ -1,0 +1,15 @@
+{
+  "timeout": 30000,
+  "consumer": "MyConsumer",
+  "cors": false,
+  "dir": "C:\\pact-play\\pact\\pacts",
+  "host": "127.0.0.1",
+  "log": "C:\\pact-play\\pact\\logs\\MyConsumer-MyProvider-mockserver-interaction-port-8992.log",
+  "logLevel": "INFO",
+  "provider": "MyProvider",
+  "pactfileWriteMode": "update",
+  "spec": 2,
+  "ssl": false,
+  "port": 8992,
+  "pactFileWriteMode": "overwrite"
+}
